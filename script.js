@@ -68,10 +68,13 @@ function replaceImage() {
   console.log('Called replaceImage()');
 
   let picElement = document.querySelector('#picture');
-  newImage.src = "https://lh3.googleusercontent.com/proxy/UkQwq3qzk5wtPTeP-8MtyUTS3HLMz8STyf0w5WRGK_8lPUBW35jiv_JshEhHgiV43bL807uwdMWDkBziOwmH4HNJ1shHyXabBCfwSjasTm1XT3R6w6jz05pnRfr4Jxx909ptEm6PEz1dlqR-HitV-zQZRVqsdJ39iA";
+  picElement.src = "https://p7.hiclipart.com/preview/553/1007/814/banana-bread-animation-food-clip-art-banana.jpg";
 
   // console.log(picElement);
-  // picElement.innerHTML = 'src= ';
+  // picElement.innerHTML = '<img src= "https://p7.hiclipart.com/preview/553/1007/814/banana-bread-animation-food-clip-art-banana.jpg">';
+
+  // picElement.newImage.src = "https://lh3.googleusercontent.com/proxy/UkQwq3qzk5wtPTeP-8MtyUTS3HLMz8STyf0w5WRGK_8lPUBW35jiv_JshEhHgiV43bL807uwdMWDkBziOwmH4HNJ1shHyXabBCfwSjasTm1XT3R6w6jz05pnRfr4Jxx909ptEm6PEz1dlqR-HitV-zQZRVqsdJ39iA";
+
 
   // Change the puppy picture to a picture of your choosing
 
@@ -83,6 +86,14 @@ function replaceImage() {
 function changeCodeStatus() {
   console.log('Called changeCodeStatus()');
 
+  let statElement = document.querySelector('#codestatus');
+
+   console.log(statElement);
+   statElement.innerHTML = '<img src= "https://devhumor.com/content/uploads/images/August2019/js.png" width=300>';
+
+  // let statusElement = document.querySelector('#codestatus');
+  // statusElement.src = "https://devhumor.com/content/uploads/images/August2019/js.png";
+
   // 1. Get a reference to <div id="codestatus">
   // 2. Create image element containing a sweet ol' meme
   // 3. Replace text in codestatus w/ image
@@ -91,7 +102,7 @@ function changeCodeStatus() {
 // Get a reference to the button w/ id="show-info-button"
 let showInfoButton = document.querySelector('#show-info-button');
 
-// Do something when showInfoButton is clicke
+// Do something when showInfoButton is clicked
 showInfoButton.addEventListener('click', function() {
   console.log('Clicked "Show Info" button');
 
