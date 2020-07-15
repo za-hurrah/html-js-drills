@@ -22,11 +22,37 @@ function addName() {
   // - https://www.w3schools.com/jsref/prop_node_innertext.asp
 
   let nameElement = document.querySelector('#name');
-  nameElement.innerText = 'See script.js!';
+  nameElement.innerText = 'BoBo Banana!';
 }
 
 function addFavoriteThings() {
   console.log('Called addFavoriteThings()');
+
+  let fivElement = document.querySelector('#favthings');
+
+   console.log(fivElement);
+   fivElement.innerHTML = '<li>growing</li><li>ripening</li><li>transferring energy!</li>';
+
+  // ^I don't think this is properly listed under the intended ul, but it gets the job done.
+   // nameElement.textContent = 'growing';
+  // nameElement.textContent = 'ripening';
+  // nameElement.textContent = 'transferring energy';
+
+// document.getElementById('#favthings').innerHTML = <li>growing</li>;
+  // favElement.innerHTML = <li>growing</li><li>ripening</li><li>transferring energy!</li> ;
+  // favElement.style.color = 'green';
+  // let li = document.createElement('LIST');
+
+
+  // li.textContent = 'growing';
+  // favthings.appendChild(li);
+
+  // li = document.createElement('LIST');
+  // li.textContent = 'ripening';
+
+  // const favthings = document.querySelector('#favthings');
+  // favthings.appendChild(li);
+// ^ all of those are from resources but I couldn't get them to work
 
   // 1. Get a reference to <ul id="favthings">
   // 2. Create a few list items representing your favorite things
@@ -40,6 +66,12 @@ function addFavoriteThings() {
 
 function replaceImage() {
   console.log('Called replaceImage()');
+
+  let picElement = document.querySelector('#picture');
+  newImage.src = "https://lh3.googleusercontent.com/proxy/UkQwq3qzk5wtPTeP-8MtyUTS3HLMz8STyf0w5WRGK_8lPUBW35jiv_JshEhHgiV43bL807uwdMWDkBziOwmH4HNJ1shHyXabBCfwSjasTm1XT3R6w6jz05pnRfr4Jxx909ptEm6PEz1dlqR-HitV-zQZRVqsdJ39iA";
+
+  // console.log(picElement);
+  // picElement.innerHTML = 'src= ';
 
   // Change the puppy picture to a picture of your choosing
 
